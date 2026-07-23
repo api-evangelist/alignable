@@ -1,7 +1,25 @@
 aid: alignable
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alignable.png
 name: Alignable
-description: Alignable is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Alignable is a business networking platform that connects small business
+  owners and entrepreneurs across North America. Its members build local referral
+  relationships, join discussion groups and networking events, request and give business
+  introductions, and use intelligent matching tools to find nearby partners, suppliers,
+  and customers. The platform reports more than 10 million members and focuses on
+  peer support and word-of-mouth growth for small businesses. Alignable does not
+  currently publish a public developer API, SDKs, or developer portal; this profile
+  captures its public web presence, policies, and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/alignable/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +32,12 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Business Networking
+- Small Business
+- Referrals
+- Community
+- Local Business
+- Entrepreneurs
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alignable-domain-security.yml
 - type: Website
-  url: https://alignable.com
+  url: https://www.alignable.com
+- type: HelpCenter
+  url: https://support.alignable.com/hc/en-us
+- type: Blog
+  url: https://www.alignable.com/blog
+- type: TermsOfService
+  url: https://www.alignable.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.alignable.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
